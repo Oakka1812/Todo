@@ -1,0 +1,14 @@
+{
+  "todolist": [
+    {
+      "id": "d912f547-3b04-b10c-85b9-94570eb64bea",
+      "task": "Breakfast",
+      "complete": false
+    },
+    {
+      "id": "b6911d2a-e039-e8b0-d982-b385d02f2aee",
+      "task": "Lunch",
+      "complete": false
+    }
+  ]
+}
