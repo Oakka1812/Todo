@@ -15,7 +15,7 @@ const Card = ({ todos, deleteTodos, updateTodos }) => {
           key={todo.id}
           className={
             todo.complete
-              ? "list-group-item w-100 mt-3 shadow-sm bg-success text-decoration-line-through"
+              ? "list-group-item w-100 mt-3 shadow-sm bg-danger text-black text-decoration-line-through"
               : "list-group-item w-100 mt-3 shadow-sm"
           }// conditional styling
         >
@@ -25,14 +25,14 @@ const Card = ({ todos, deleteTodos, updateTodos }) => {
                 type="checkbox"
                 className="me-2"
                 onClick={() => updateTodos(todo.id, !todo.complete)} //passing opposite of complete status
-                checked={todo.complete} //todo status ture = checked
+                defaultChecked={todo.complete} //todo status ture = checked
               />
               {todo.task}
             </div>
             <div className="col-2">
               <i
                 onClick={() => handleDeleteTodos(todo.id)}//passing id to delete function
-                className="fa-solid fa-xmark text-danger"
+                className="fa-solid fa-xmark text-black"
               ></i>
             </div>
           </div>
